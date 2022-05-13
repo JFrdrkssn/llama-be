@@ -54,6 +54,11 @@ INSTALLED_APPS = [
     'rest_framework.authtoken',
     'dj_rest_auth',
     'profiles',
+    'posts',
+    'likes',
+    'followers',
+    'comments',
+    'categories',
 ]
 
 MIDDLEWARE = [
