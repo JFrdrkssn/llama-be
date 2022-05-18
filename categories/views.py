@@ -1,13 +1,14 @@
-from rest_framework import generics
+from rest_framework import generics, permissions
 from categories.models import Category
 from categories.serializers import CategorySerializer
 
 
-class CategoryList(generics.ListAPIView):
+class CategoryList(generics.ListCreateAPIView):
     """
     List categories.
     """
     serializer_class = CategorySerializer
+    permission_classes = [permissions.IsAuthenticatedOrReadOnly]
     queryset = Category.objects.all()
 
 
