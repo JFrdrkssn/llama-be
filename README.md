@@ -310,3 +310,27 @@ The project is now set up to automatically switch between DEBUG: True and False 
 3.  On Heroku, go to Deploy and and choose manual deploy.
 4.  On Heroku, go to Settings and scroll down to Domains where you find the deployed URL.
     <br/><br/>
+
+# **Credits**
+<br/>
+
+## **Code**
+
+- This API was built using Django REST Framework. The source code is from Code Institute's Django REST API walkthrough project [GitHub](https://github.com/Code-Institute-Solutions/drf-api). I decided to base the whole project on this API since it was a great fit for the application I had planned and it provides a great foundation to expand upon.
+<br/><br/>
+
+## **Content**
+
+- The structure and layout of this README.md was based on [this template](https://github.com/Code-Institute-Solutions/SampleREADME) by [Code Institute](https://codeinstitute.net/). Some text was also copied. Additional inspiration for this README.md was given from other templates in Code Institute's course curriculum and previous student and alumnus Christopher Goodfellow and his [Tarmachan](https://github.com/Tawnygoody/Tarmachan) project.
+<br/><br/>
+
+## **Media**
+
+- Default profile image and default post image from [Code Institute](https://codeinstitute.net/) course material.
+<br/><br/>
+
+## **Acknowledgements**
+
+- My Mentor, Martina Terlevic, for continuous helpful feedback and support.
+- [Code Institute](https://codeinstitute.net/) tutors for help with various issues.
+- [Stack Overflow](https://stackoverflow.com/) for all kinds of tips and tricks.
