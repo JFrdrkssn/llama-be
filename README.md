@@ -54,3 +54,46 @@ The backend API application is built with Django REST Framework.
 The Category model has not been fully completed and implemented and is therefore not currently used for the frontend application.
 
 <br/><br/>
+
+# **Agile**
+
+<br/>
+
+## **Project Goals**
+
+<br/>
+
+The general goal of this project is to build a custom backend API for the [llAMA](https://github.com/JFrdrkssn/llama) frontend application and expand them in tandem.
+
+The immediate goal of this project was to build a custom backend API for the [llAMA](https://github.com/JFrdrkssn/llama) frontend application. It is fully functional in relation to the needs of the frontend application right now, the primary goal for this project.
+
+<br/>
+
+## **User Stories**
+
+<br/>
+
+  - ### Admin: users
+
+    - As an admin, I can create, edit and delete users. set user permissions and usernames.
+    - As an admin, I can set user permissions and usernames.
+    <br/><br/>
+
+  - ### Admin: posts
+
+    - As a admin, I can create, edit and delete posts.
+    <br/><br/>
+
+  - ### Admin: profiles
+
+    - As an admin, I can create, edit and delete profiles.
+    <br/><br/>
+
+  - ### Admin: comments
+
+    - As an admin, I can create, edit and delete comments.
+    <br/><br/>
+
+No agile workflow tool is used for this project currently.
+
+<br/><br/>
