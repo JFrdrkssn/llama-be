@@ -114,3 +114,43 @@ No agile workflow tool is used for this project currently.
 - Image resizing and compression
   - Cloudinary, which is to store images, has an auto-transform function. This would help resize and compress images to prevent them from being too big and slowing down the site.
     <br/><br/>
+
+# **Technologies**
+
+<br/>
+
+## **Languages**
+
+- [Python](https://www.python.org/)
+
+<br/>
+
+## **Programs, libraries, frameworks and dependencies**
+
+- [Gitpod](https://gitpod.io)
+  - Gitpod to host a virtual workspace.
+- [Git](https://git-scm.com/)
+  - Git for version control by utilizing the Gitpod terminal to commit and push to GitHub and Heroku.
+- [GitHub](https://github.com/)
+  - GitHub to store the project code after being pushed from Git.
+- [Django REST Framework](https://www.django-rest-framework.org/)
+  - Django REST Framework to build the backend API.
+- [Django AllAuth](https://django-allauth.readthedocs.io/en/latest/index.html)
+  - AllAuth for user authentication.
+- [Cloudinary](https://cloudinary.com/)
+  - Cloudinary for image hosting.
+- [Heroku](https://id.heroku.com/login)
+  - Heroku to host both the frontend and backends applications and connect them.
+- [PostgreSQL](https://www.postgresql.org/)
+  - PostgreSQL for deployed database.
+- [Gunicorn](https://gunicorn.org/)
+  - Gunicorn for WSGI HTTP on deployed site.
+- [PyJWT](https://pyjwt.readthedocs.io/en/stable/)
+  - PyJWT for encode and decode JSON Web Tokens.
+- [Pillow](https://pillow.readthedocs.io/en/stable/)
+  - Pillow for image processing and validation.
+- [psycopg2](https://www.psycopg.org/docs/)
+  - psycopg2 for PostgreSQL Python adaption.
+- [dbdiagram](https://dbdiagram.io/home)
+  - dbdiagram to create the ERD.
+  <br/><br/>
