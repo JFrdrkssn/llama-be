@@ -193,3 +193,28 @@ PEP8 was used to validate the code.
     <br/><br/>
 
 <br/><br/>
+
+## **Manual Testing**
+
+<br/>
+
+### **Admin panel**
+
+| Test       | Action            | Expected Result               | Pass |
+| ---------- | ---------------- | --------------------------- | ---- |
+| Users     | Create, edit, delete   | A user is created, edited or deleted.   | ✓    |
+| Users     | Update permissions  | The user permissions are updated.      | ✓    |
+| Profiles   | Create, edit, delete | A profile is created, edited or deleted.  | ✓    |
+| Posts  | Create, edit, delete       | A post is created, edited or deleted.        | ✓    |
+| Comments   | Create, edit, delete | A comment is created, edited or deleted.   | ✓    |
+
+<br/><br/>
+
+## **Bugs**
+<br/>
+
+### Remaining Found Bugs
+
+- The admin panel CSS is broken. This is common problem related to static files with Django.
+  - Tried adding STATIC file path URLs to settings.py file. No success. The admin panel still works but looks wonky.
+<br/><br/>
