@@ -225,6 +225,12 @@ PEP8 was used to validate the code.
 ## **Development**
 <br/>
 
+### **\*Note**:
+
+- It is currently not possible to link GitHub repositories with Heroku in the way described below, but as of this date, 24th May, it will be re-enabled this week (week 21 2022). It is therefore recommended to wait until this feature has been re-enabled before connecting Heroku with your GitHub repository. This will greatly simplify the deployment.
+
+<br/>
+
 1.  Clone [this repository](https://github.com/JFrdrkssn/llama-be).
 2.  Open your IDE (GitPod is recommended, since URL paths for development environment in settings.py are configured to work with GitPod URLs. You have to change these if you're not using GitPod) and connect to your repo, then enter this command in the terminal:
         
