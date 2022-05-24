@@ -218,3 +218,95 @@ PEP8 was used to validate the code.
 - The admin panel CSS is broken. This is common problem related to static files with Django.
   - Tried adding STATIC file path URLs to settings.py file. No success. The admin panel still works but looks wonky.
 <br/><br/>
+
+# **Deployment**
+<br/>
+
+## **Development**
+<br/>
+
+1.  Clone [this repository](https://github.com/JFrdrkssn/llama-be).
+2.  Open your IDE (GitPod is recommended, since URL paths for development environment in settings.py are configured to work with GitPod URLs. You have to change these if you're not using GitPod) and connect to your repo, then enter this command in the terminal:
+        
+        pip install -r requirements.txt
+
+- Make sure your INSTALLED_APPS in settings.py look like this:
+
+        INSTALLED_APPS = [
+        'django.contrib.admin',
+        'django.contrib.auth',
+        'django.contrib.contenttypes',
+        'django.contrib.sessions',
+        'django.contrib.messages',
+        'cloudinary_storage',
+        'django.contrib.staticfiles',
+        'cloudinary',
+        'rest_framework',
+        'django_filters',
+        'rest_framework.authtoken',
+        'dj_rest_auth',
+        'django.contrib.sites',
+        'allauth',
+        'allauth.account',
+        'allauth.socialaccount',
+        'dj_rest_auth.registration',
+        'corsheaders',
+        'profiles',
+        'posts',
+        'comments',
+        'likes',
+        'followers',
+        'categories',
+        ]
+
+3. In you terminal, enter these commands in the terminal:
+
+        python manage.py makemigrations
+        python manage.py migrate
+
+4.  Git add, commit and push all changes to your repo.
+5.  Create or log in to an account on Heroku.
+6.  Create a new app on Heroku.
+7.  Open your app on Heroku, go to Resources, Add-ons and search for PostgreSQL, then add it.
+8.  In the Deploy tab on Heroku, go to Deployment method and add your GitHub repository.
+9.  In the Deploy tab on Heroku, go to Manual deploy and select deploy branch for early deployment.
+10. Create or log in to an account on Cloudinary.
+11. Copy your API Environment Variable.
+12. Go back to Heroku, Settings and click on Reveal Config Vars.
+13. Add these variables to your config vars. PostgreSQL DATABASE_URL should already be there.
+    - ALLOWED_HOST | your_deployed_api_url
+    - CLIENT_ORIGIN | your_deployed_frontend_url
+    - CLIENT_ORIGIN_DEV | your_local_server_url
+    - CLOUDINARY_URL | your_api_variable
+    - SECRET_KEY | your_choice ([Secret Key Generator](https://miniwebtool.com/django-secret-key-generator/))
+    - DISABLE_COLLECTSTATIC | 1
+14. Create an env.py in the root directory, add it to .gitignore and add these lines at the top
+
+        import os
+
+        os.environ["SECRET_KEY"] = "your secret_key here"
+        os.environ["CLOUDINARY_URL"] = "cloudinary url here"
+        os.environ['DEV'] = '1'
+15. Create a superuser for your site:
+
+        python manage.py createsuperuser
+
+16. To run your app locally, enter this command in your terminal:
+        python manage.py runserver
+    <br/>
+
+The project is now set up to automatically switch between DEBUG: True and False for development server and deployed site.
+<br/><br/>
+
+## **Production**
+<br/>
+
+1.  If changes has been made, make sure to run migrations:
+
+        python manage.py makemigrations
+        python manage.py migrate
+
+2.  Git add, commit and push all changes to your repo.
+3.  On Heroku, go to Deploy and and choose manual deploy.
+4.  On Heroku, go to Settings and scroll down to Domains where you find the deployed URL.
+    <br/><br/>
