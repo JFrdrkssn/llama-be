@@ -154,3 +154,42 @@ No agile workflow tool is used for this project currently.
 - [dbdiagram](https://dbdiagram.io/home)
   - dbdiagram to create the ERD.
   <br/><br/>
+
+# **Testing**
+
+<br/>
+
+PEP8 was used to validate the code.
+
+- [PEP8](http://pep8online.com/) show no significant issues.
+  <br/><br/>
+
+## **Testing User Stories from Agile section**
+
+- ### Admin: users
+
+    - As an admin, I can create, edit and delete users. set user permissions and usernames.
+      - All functionality is working.
+    - As an admin, I can set user permissions and usernames.
+      - All functionality is working.
+    <br/><br/>
+
+  - ### Admin: posts
+
+    - As a admin, I can create, edit and delete posts.
+      - All functionality is working.
+    <br/><br/>
+
+  - ### Admin: profiles
+
+    - As an admin, I can create, edit and delete profiles.
+      - All functionality is working.
+    <br/><br/>
+
+  - ### Admin: comments
+
+    - As an admin, I can create, edit and delete comments.
+      - All functionality is working.
+    <br/><br/>
+
+<br/><br/>
