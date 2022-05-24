@@ -97,3 +97,20 @@ The immediate goal of this project was to build a custom backend API for the [ll
 No agile workflow tool is used for this project currently.
 
 <br/><br/>
+
+# **Future Features**
+
+<br/>
+
+
+## _These features are planned._
+
+- Expand the Category model
+  - Expanding the category model and adding additional fields for subcategories etc.
+    <br/><br/>
+- Expand the Profile model
+  - Additional fields for users to add more info about themselves, for example age or job title.
+    <br/><br/>
+- Image resizing and compression
+  - Cloudinary, which is to store images, has an auto-transform function. This would help resize and compress images to prevent them from being too big and slowing down the site.
+    <br/><br/>
