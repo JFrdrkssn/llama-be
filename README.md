@@ -232,7 +232,7 @@ PEP8 was used to validate the code.
 <br/>
 
 1.  Clone [this repository](https://github.com/JFrdrkssn/llama-be).
-2.  Open your IDE (GitPod is recommended, since URL paths for development environment in settings.py are configured to work with GitPod URLs. You have to change these if you're not using GitPod) and connect to your repo, then enter this command in the terminal:
+2.  In your IDE, connect to your repo, then enter this command in the terminal:
         
         pip install -r requirements.txt
 
@@ -293,11 +293,20 @@ PEP8 was used to validate the code.
         os.environ["SECRET_KEY"] = "your secret_key here"
         os.environ["CLOUDINARY_URL"] = "cloudinary url here"
         os.environ['DEV'] = '1'
-15. Create a superuser for your site:
+
+15. In settings.py, update the CORS_ALLOWED_ORIGIN_REGEXES variable to match your local server url.
+
+        if 'CLIENT_ORIGIN_DEV' in os.environ:
+            extracted_url = re.match(r'^.+-', os.environ.get('CLIENT_ORIGIN_DEV', ''), re.IGNORECASE).group(0)
+            CORS_ALLOWED_ORIGIN_REGEXES = [
+                rf"{extracted_url}(eu|us)\d+\w\.gitpod\.io$",
+            ]
+
+16. Create a superuser for your site:
 
         python manage.py createsuperuser
 
-16. To run your app locally, enter this command in your terminal:
+17. To run your app locally, enter this command in your terminal:
         python manage.py runserver
     <br/>
 
